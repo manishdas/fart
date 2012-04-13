@@ -8,9 +8,9 @@ module Fart
 
     desc "fart", "Plays fart noise"
     def fart
-      say("Playing Fart Noise......", :yellow)
+      say("Surprise!!!", :yellow)
       Paad.play()
-      say("Played Fart Noise", :green)
+      say("Smell and breathe this Sucker!, huhahaha.. :D", :yellow)
     end
   end
 end

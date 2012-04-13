@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Manish Das"]
   s.email       = ["manishlaldas.md@gmail.com"]
   s.homepage    = "http://manishdas.github.com"
-  s.summary     = %q{Write a gem summary}
-  s.description = %q{Write a gem description}
+  s.summary     = %q{Fart Noise}
+  s.description = %q{Simple usage of command line interface}
 
   s.rubyforge_project = "fart"
 
@@ -17,11 +17,12 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = ["fart"]
   s.require_paths = ["lib"]
-
-  # specify any dependencies here; for example:
-  s.add_dependency  "thor", "~> 0.14"
+  s.post_install_message =<<EOF
   
+    Run fart in your terminal:
+    $fart
+    
+EOF
+  s.add_dependency  "thor", "~> 0.14"
   s.add_development_dependency "bundler", "~> 1.0.0"
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
 end
